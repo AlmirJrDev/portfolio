@@ -55,7 +55,7 @@ Se você está procurando alguém com paixão, dedicação e sede de aprendizado
 
 
 
-    <img className='size-64 rounded-md' src="/almirdesenho.jpeg" alt="" />
+    <img className='size-64 rounded-md' src="https:github.com/almirjrdev.png" alt="" />
     </motion.div>
     <Button className='w-40 mt-4'>Ler mais {'->'}</Button>
     </motion.section>

@@ -54,7 +54,7 @@ export function ProjectPage() {
     return () => clearTimeout(timeout); // Limpa o timeout ao desmontar o componente
   }, []);
   return(
-    <main className="px-40">
+    <main className="px-40 pb-40">
       <motion.section id='projetos'
           initial="hidden"
           animate='visible' 

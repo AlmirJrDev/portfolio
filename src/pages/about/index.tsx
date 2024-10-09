@@ -1,7 +1,7 @@
 
 
 
-export function About() {
+export function AboutPage() {
   return(
     <>
         <main className="pr-40 pl-40 pb-40">
@@ -20,7 +20,7 @@ Se você está procurando alguém com paixão, dedicação e sede de aprendizado
 </p>
             </div>
           </div>
-          <div className="flex mt-32 justify-around items-center">
+          <div className="flex mt-32 justify-between items-center">
           <div>
             <h2 className="text-white">// Experiencias</h2>
             <div className="mt-6 mb-12 flex items-center gap-4">
@@ -44,15 +44,24 @@ Se você está procurando alguém com paixão, dedicação e sede de aprendizado
           <div>
             <h2 className="text-white">// Academy</h2>
             <div className="mt-6 mb-12 flex items-center gap-4">
-              <img className="w-24 rounded-full object-cover" src="https://media.licdn.com/dms/image/v2/D4D0BAQGWWA3gGWJ3Sg/company-logo_200_200/company-logo_200_200/0/1701903187680/rocketseat_logo?e=1735776000&v=beta&t=py6x1Yeyk5cVzZQkMmFPXd78WEYbpB9zdojKYWF5BQ0" alt="" />
+              <img className="w-24 rounded-full object-cover" src="https://media.licdn.com/dms/image/v2/D4D0BAQGWWA3gGWJ3Sg/company-logo_200_200/company-logo_200_200/0/1701903187680/rocketseat_logo?e=1736380800&v=beta&t=PZcww1b4tzgCROvGMTxuhTlkQXcPdJmz8FxsMy4K6wE" alt="" />
               <div className="flex flex-col">
                 <h3 className="text-white">Rocketseat</h3>
-                <span className="text-gray-400 italic">Front-end & Mobile</span>
+                <span className="text-gray-400 italic">Developer Front-end & Mobile</span>
                 <span className="text-gray-400">2022-Ago</span>
               </div>
             </div>
-         
+            <div className="mt-2 flex items-center gap-4">
+              <img className="w-24 rounded-full object-cover" src="https://media.licdn.com/dms/image/v2/C560BAQEOFHwdORFPhA/company-logo_200_200/company-logo_200_200/0/1630639303809/unasp_br_logo?e=1736380800&v=beta&t=hkKEEx1pE7YyL_7MmYhWwZmn_cndm-6GWmdu9WQyXjc" alt="" />
+              <div className="flex flex-col">
+                <h3 className="text-white">Unasp HT</h3>
+                <span className="text-gray-400 italic">Sistema da Informação</span>
+                <span className="text-gray-400">2025-Ago</span>
+              </div>
+            </div>
           </div>
+         
+          
           </div>
         </main>
     </>

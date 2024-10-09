@@ -28,16 +28,17 @@ export function Header() {
   };
 
   return(
-    <motion.header 
-    className='flex items-center justify-center  mb-24 gap-2 border-y-2 p-4 '>
-    <div id='/' className='flex items-center gap-32 '>
-    <motion.div
+    <header 
+    className=' mb-24 gap-2 border-b p-4 px-12 '>
+    <div id='/' className='flex justify-between items-center m-auto  '>
+    <div
 
     >
       <h1 className='text-white'>AlmirJrDev</h1>
-    </motion.div>
+    </div>
 
- 
+  
+  <div className=' '>
 
     <NavigationMenu className='bg-transparent border text-white rounded-md'>
       <NavigationMenuList className='divide-x'>
@@ -81,7 +82,7 @@ export function Header() {
 
         </NavigationMenuItem>
         <NavigationMenuItem>
-        <NavigationMenuLink>
+        <NavigationMenuLink href='/contact'>
               <ul className="text-sm font-medium px-4">
                 <li>Contato</li>
               </ul>
@@ -90,13 +91,10 @@ export function Header() {
       </NavigationMenuList>
     </NavigationMenu>
 
-    <motion.div
-
-    >
-      <Switch />
-    </motion.div>
+    </div>
+  
   </div>
 
- </motion.header> 
+ </header> 
   )
 }''

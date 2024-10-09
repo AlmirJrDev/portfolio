@@ -53,11 +53,11 @@ export function Container() {
     <br />
     &nbsp;&nbsp;"skills": <span className='text-cyan-300'>[</span><span className='text-amber-400'>"TypeScript", "React", "Tailwind.css", "Shadcn/ui"</span><span className='text-cyan-300'>]</span>,
     <br />
-    &nbsp;&nbsp;"github": <a target='_blank' href="https://github.com/AlmirJrDev" className='text-white'>"https://github.com/AlmirJrDev"</a> <span className='text-cyan-700 animate-pulse '>// {'<-'} Click there :D</span>
+    &nbsp;&nbsp;"github": <a target='_blank' href="https://github.com/AlmirJrDev" className='text-white ease-in-out transition-all hover:text-lg '>"https://github.com/AlmirJrDev"</a> <span className='text-cyan-700 animate-pulse '>// {'<-'} Click there :D</span>
     <br />
     <span className="text-yellow-400">{"}"}</span></pre>
     <Drawer >
-<DrawerTrigger className='mt-4 bg-zinc-900 rounded-md p-2 w-auto text-white'>Entrar em contato</DrawerTrigger>
+<DrawerTrigger className='mt-4 bg-zinc-900 rounded-md p-2 w-auto transition-all ease-in-out text-white hover:bg-white hover:text-black'>Entrar em contato</DrawerTrigger>
 <DrawerContent className='flex justify-center items-center w-96 m-auto border-none bg-zinc-900 h-[50%] '>
 <DrawerHeader className='flex justify-center items-center flex-col'>
   <DrawerTitle className='text-white'>Contatos</DrawerTitle>
@@ -104,8 +104,8 @@ export function Container() {
 </DrawerContent>
 </Drawer>
     </div>
-      <div>
-      <motion.img  src="/almirdesenho.jpeg" className='w-64' alt="" />
+      <div className="bg-cyan-300  rounded-md">
+      <motion.img   src="/almirdesenho.jpeg" className='w-64 rounded-md transition hover:rotate-0 rotate-12 ' alt="" />
 </div>
   </motion.div >
   )
