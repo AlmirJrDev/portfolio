@@ -1,6 +1,6 @@
 
 
-import { motion } from 'framer-motion'
+
 
 import {
   NavigationMenu,
@@ -12,7 +12,7 @@ import {
   NavigationMenuTrigger,
 
 } from "@/components/ui/navigation-menu"
-import { Switch } from '../../components/ui/switch'
+
 
 import { useNavigate } from 'react-router-dom';
 
