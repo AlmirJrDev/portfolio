@@ -63,7 +63,7 @@ export function ProjectPage() {
 
         className='pt-40'>
               <div className='flex justify-between'>
-              <h2 className='text-cyan-700'>// Projects</h2><a className='text-white' href="/project">{'->'} ver tudo</a>
+              <h2 className='text-cyan-700'>// Projects</h2>
               </div>
 
               <div className='grid grid-cols-3 gap-2 mt-4 '> 
@@ -74,7 +74,7 @@ export function ProjectPage() {
   className='mb-4 w-full h-full object-contain'
   src={`https://raw.githubusercontent.com/${repo.owner.login}/${repo.name}/master/public/thumbnail.png`}
   alt={repo.name}
-  onError={(e) => (e.currentTarget.src = repo.owner.avatar_url)} // Fallback para avatar do dono do repositório
+  onError={(e) => (e.currentTarget.src = "default.svg")} // Fallback para avatar do dono do repositório
 />
 
 
@@ -99,18 +99,19 @@ export function ProjectPage() {
         target="_blank"
         rel="noopener noreferrer"
       >
-        <Github />
+        <Github className="transition-all hover:rotate-12 hover:size-7" />
       </a>
     </>
   ) : (
     <a
-      className='flex justify-center items-center h-10 w-full rounded-md bg-blue-600'
-      href={repo.html_url}
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      <Github />
-    </a>
+  className='flex justify-center items-center h-10 w-full rounded-md bg-blue-600 group'
+  href={repo.html_url}
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  <Github className="transition-all group-hover:rotate-12 group-hover:scale-110" />
+</a>
+
   )}
 </CardFooter>
 

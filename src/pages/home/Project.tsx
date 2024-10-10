@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { Github } from "lucide-react";
 import { Card, CardHeader, CardTitle, CardDescription, CardFooter } from "../../components/ui/card";
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 
 interface Owner {
@@ -76,7 +77,7 @@ useEffect(() => {
 
         className='pt-40'>
               <div className='flex justify-between'>
-              <h2 className='text-cyan-700'>// Projects</h2><a className='text-white' href="/project">{'->'} ver tudo</a>
+              <h2 className='text-cyan-700'>// Projects</h2><Link className='text-white' to="/project">{'->'} ver tudo</Link>
               </div>
 
               <div className='grid grid-cols-3 gap-2 mt-4 '> 
@@ -86,8 +87,9 @@ useEffect(() => {
         <img
   className='mb-4 w-full h-full object-contain'
   src={`https://raw.githubusercontent.com/${repo.owner.login}/${repo.name}/master/public/thumbnail.png`}
+  
   alt={repo.name}
-  onError={(e) => (e.currentTarget.src = repo.owner.avatar_url)} // Fallback para avatar do dono do repositório
+  onError={(e) => (e.currentTarget.src = "default.svg")} // Fallback para avatar do dono do repositório
 />
 
 
@@ -112,7 +114,7 @@ useEffect(() => {
         target="_blank"
         rel="noopener noreferrer"
       >
-        <Github />
+        <Github className="transition-all hover:rotate-12 hover:size-7" />
       </a>
     </>
   ) : (
@@ -122,7 +124,7 @@ useEffect(() => {
       target="_blank"
       rel="noopener noreferrer"
     >
-      <Github />
+      <Github className="transition-all hover:rotate-12 hover:size-7" />
     </a>
   )}
 </CardFooter>

@@ -41,7 +41,7 @@ export function Header() {
   
   <div className=' '>
 
-    <NavigationMenu className='bg-transparent border text-white rounded-md'>
+    <NavigationMenu className='bg-transparent border cursor-pointer text-white rounded-md'>
       <NavigationMenuList className='divide-x'>
         <NavigationMenuItem>
           <NavigationMenuTrigger className='bg-transparent hover:bg-transparent hover:text-white'>Home</NavigationMenuTrigger>

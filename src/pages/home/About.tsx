@@ -1,8 +1,8 @@
 
 
 import { motion } from "framer-motion";
-import { Button } from "../../components/ui/button";
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 export function AboutHome() {
   const [scrollY, setScrollY] = useState(0);
@@ -57,7 +57,7 @@ Se você está procurando alguém com paixão, dedicação e sede de aprendizado
 
     <img className='size-64 rounded-md' src="https:github.com/almirjrdev.png" alt="" />
     </motion.div>
-    <Button className='w-40 mt-4'>Ler mais {'->'}</Button>
+    <Link to="/about" className='bg-black h-10 rounded-md text-center flex justify-center items-center text-white w-40 mt-4'>Ler mais {'->'}</Link>
     </motion.section>
 
   )
