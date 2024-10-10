@@ -12,6 +12,7 @@ import {
   NavigationMenuTrigger,
 
 } from "@/components/ui/navigation-menu"
+import { Link } from "react-router-dom";
 
 
 import { useNavigate } from 'react-router-dom';
@@ -67,26 +68,25 @@ export function Header() {
             </NavigationMenuLink>
           </NavigationMenuContent>
         </NavigationMenuItem>
-        <NavigationMenuLink href='/about'>
+        <Link to='/about'>
               <ul className="text-sm font-medium px-4">
                 <li>Sobre</li>
               </ul>
-            </NavigationMenuLink>
+            </Link>
         <NavigationMenuItem>
-
-        <NavigationMenuLink href='/project'>
+        <Link to='/project'>
               <ul className="text-sm font-medium px-4">
                 <li>Projetos</li>
               </ul>
-            </NavigationMenuLink>
+            </Link>
 
         </NavigationMenuItem>
         <NavigationMenuItem>
-        <NavigationMenuLink href='/contact'>
+        <Link to='/contact'>
               <ul className="text-sm font-medium px-4">
                 <li>Contato</li>
               </ul>
-            </NavigationMenuLink>
+            </Link>
         </NavigationMenuItem>
       </NavigationMenuList>
     </NavigationMenu>
