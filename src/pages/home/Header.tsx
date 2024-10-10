@@ -31,11 +31,11 @@ export function Header() {
   return(
     <header 
     className=' mb-24 gap-2 border-b p-4 px-12 '>
-    <div id='/' className='flex justify-between items-center m-auto  '>
+    <div id='/' className='flex justify-between items-center m-auto max-xl:justify-center '>
     <div
 
     >
-      <h1 className='text-white'>AlmirJrDev</h1>
+      <h1 className='text-white max-xl:hidden'>AlmirJrDev</h1>
     </div>
 
   
@@ -46,6 +46,11 @@ export function Header() {
         <NavigationMenuItem>
           <NavigationMenuTrigger className='bg-transparent hover:bg-transparent hover:text-white'>Home</NavigationMenuTrigger>
           <NavigationMenuContent>
+          <NavigationMenuLink href="/">
+              <ul className="grid gap-3 p-6 md:w-[356px]  lg:grid-cols-[.75fr_1fr]">
+                <li className='w-ful'>Home</li>
+              </ul>
+            </NavigationMenuLink>
             <NavigationMenuLink  onClick={() => handleNavigation('projetos')}>
               <ul className="grid gap-3 p-6 md:w-[356px]  lg:grid-cols-[.75fr_1fr]">
                 <li className='w-ful'>Projetos</li>
