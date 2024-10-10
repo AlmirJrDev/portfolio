@@ -4,12 +4,12 @@
 export function AboutPage() {
   return(
     <>
-        <main className="pr-40 pl-40 pb-40">
+        <main className="pr-40 pl-40 pb-40 max-lg:p-10 max-lg:flex max-lg:justify-center max-lg:items-center max-lg:flex-col ">
           <h1 className="text-white">// Sobre mim</h1>
-          <div className="mt-12 flex justify-around">
-            <div><img className="w-96 rounded-full" src="/almirdesenho.jpeg" alt="" /></div>
+          <div className="mt-12 flex justify-around max-lg:flex max-lg:justify-center max-lg:items-center max-lg:flex-col">
+            <div><img className="w-96 mb-12 rounded-full max-lg:w-full" src="/almirdesenho.jpeg" alt="" /></div>
             <div>
-            <p className='text-sm max-w-lg text-white'>
+            <p className='text-sm text-justify max-w-lg text-white max-lg:w-full'>
 Olá! Eu sou o Almir Júnior, <br /> <br/> um apaixonado por tecnologia desde os meus 5 anos de idade. Minha jornada no desenvolvimento começou oficialmente em 2021, e desde então, tenho me dedicado a me especializar na área de front-end, onde encontrei minha verdadeira paixão. Utilizo principalmente TypeScript e React no meu dia a dia, tecnologias que me permitem criar aplicações web robustas e modernas <br /> Além disso, tenho um bom conhecimento em Next.js e React Native, o que amplia minha capacidade de trabalhar em diferentes projetos, tanto para web quanto para mobile.
 <br /><br />
 Atualmente, tenho 20 anos e moro em Hortolândia-SP. Trabalho como desenvolvedor front-end na Grancoffe, uma empresa localizada em Campinas-SP, onde aplico minhas habilidades para criar interfaces de usuário funcionais e esteticamente agradáveis. Ao longo da minha carreira, busco constantemente aprimorar minhas habilidades, mantendo-me atualizado com as últimas tendências do desenvolvimento web e sempre focando em entregar soluções inovadoras.
@@ -20,10 +20,10 @@ Se você está procurando alguém com paixão, dedicação e sede de aprendizado
 </p>
             </div>
           </div>
-          <div className="flex mt-32 justify-between items-center">
-          <div>
+          <div className="flex mt-32  justify-between items-center max-lg:flex-col">
+          <div className="mb-12">
             <h2 className="text-white">// Experiencias</h2>
-            <div className="mt-6 mb-12 flex items-center gap-4">
+            <div className="mt-6 mb-12 flex items-center gap-4 ">
               <img className="w-24 rounded-full object-cover" src="https://media.licdn.com/dms/image/v2/C4E0BAQFuIkOtsvqC-A/company-logo_200_200/company-logo_200_200/0/1630643726740/grancoffeeoficial_logo?e=1735776000&v=beta&t=rixE8H8j3owNTLl763Ukn_hac4msfO6nHCu3cCU9YAM" alt="" />
               <div className="flex flex-col">
                 <h3 className="text-white">Gran Coffee</h3>
