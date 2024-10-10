@@ -54,25 +54,27 @@ export function ProjectPage() {
     return () => clearTimeout(timeout); // Limpa o timeout ao desmontar o componente
   }, []);
   return(
-    <main className="px-40 pb-40">
-      <motion.section id='projetos'
+    <main className="px-40 pb-40 max-lg:p-10">
+     
+     <motion.section id='projetos'
           initial="hidden"
-          animate='visible' 
+          animate={scrollY > 100 ? 'visible' : 'hidden'} 
           variants={variants}
           transition={{ duration: 1.0, ease: 'easeInOut' }} 
 
-        className='pt-40'>
-              <div className='flex justify-between'>
+        className='pt-40 max-lg:p-0 max-lg:flex max-lg:justify-center max-lg:items-center max-lg:flex-col'>
+              <div className='flex justify-between max-lg:gap-4'>
               <h2 className='text-cyan-700'>// Projects</h2>
               </div>
 
-              <div className='grid grid-cols-3 gap-2 mt-4 '> 
+              <div className='grid grid-cols-3 gap-2 mt-4 max-lg:flex max-lg:justify-center max-lg:items-center max-lg:flex-col'> 
           {repos.slice(0, 12).map(repo => ( // Pega os 6 primeiros repositórios
-        <Card key={repo.id} className='bg-zinc-900 border-none flex flex-col  h-full'>
+        <Card key={repo.id} className='bg-zinc-900 border-none flex flex-col h-full max-lg:w-[100%]'>
         <CardHeader className='flex-grow'>
         <img
   className='mb-4 w-full h-full object-contain'
   src={`https://raw.githubusercontent.com/${repo.owner.login}/${repo.name}/master/public/thumbnail.png`}
+  
   alt={repo.name}
   onError={(e) => (e.currentTarget.src = "default.svg")} // Fallback para avatar do dono do repositório
 />
@@ -104,14 +106,13 @@ export function ProjectPage() {
     </>
   ) : (
     <a
-  className='flex justify-center items-center h-10 w-full rounded-md bg-blue-600 group'
-  href={repo.html_url}
-  target="_blank"
-  rel="noopener noreferrer"
->
-  <Github className="transition-all group-hover:rotate-12 group-hover:scale-110" />
-</a>
-
+      className='flex justify-center items-center h-10 w-full rounded-md bg-blue-600'
+      href={repo.html_url}
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <Github className="transition-all hover:rotate-12 hover:size-7" />
+    </a>
   )}
 </CardFooter>
 
