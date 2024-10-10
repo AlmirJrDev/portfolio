@@ -75,14 +75,14 @@ useEffect(() => {
           variants={variants}
           transition={{ duration: 1.0, ease: 'easeInOut' }} 
 
-        className='pt-40'>
-              <div className='flex justify-between'>
+        className='pt-40 max-lg:p-0 max-lg:flex max-lg:justify-center max-lg:items-center max-lg:flex-col'>
+              <div className='flex justify-between max-lg:w-auto'>
               <h2 className='text-cyan-700'>// Projects</h2><Link className='text-white' to="/project">{'->'} ver tudo</Link>
               </div>
 
-              <div className='grid grid-cols-3 gap-2 mt-4 '> 
+              <div className='grid grid-cols-3 gap-2 mt-4 max-lg:flex max-lg:justify-center max-lg:items-center max-lg:flex-col'> 
           {repos.slice(0, 6).map(repo => ( // Pega os 6 primeiros repositórios
-        <Card key={repo.id} className='bg-zinc-900 border-none flex flex-col  h-full'>
+        <Card key={repo.id} className='bg-zinc-900 border-none flex flex-col h-full max-lg:w-[100%]'>
         <CardHeader className='flex-grow'>
         <img
   className='mb-4 w-full h-full object-contain'
