@@ -39,8 +39,8 @@ export function Container() {
     animate="visible" 
     variants={variants}
     transition={{ duration: 1.0, ease: 'easeInOut' }} 
-  className='flex justify-around items-center'>
-    <div className="   "><pre className="h-auto p-4 rounded-md bg-zinc-900 text-lime-500"> 
+  className='flex justify-around items-center max-xl:flex-col'>
+    <div className="   "><pre className="h-auto w-auto p-4 rounded-md bg-zinc-900 text-lime-500 max-xl:text-exs"> 
       <span className='text-cyan-700'>// Hell0 w0rld :D</span>
       <br />
       <span className="text-yellow-400">{"{"}</span>
@@ -57,7 +57,7 @@ export function Container() {
     <br />
     <span className="text-yellow-400">{"}"}</span></pre>
     <Drawer >
-<DrawerTrigger className='mt-4 bg-zinc-900 rounded-md p-2 w-auto transition-all ease-in-out text-white hover:bg-white hover:text-black'>Entrar em contato</DrawerTrigger>
+<DrawerTrigger className='mt-4 bg-zinc-900 rounded-md p-2 w-auto transition-all ease-in-out text-white hover:bg-white hover:text-black max-lg:w-full'>Entrar em contato</DrawerTrigger>
 <DrawerContent className='flex justify-center items-center w-96 m-auto border-none bg-zinc-900 h-[50%] '>
 <DrawerHeader className='flex justify-center items-center flex-col'>
   <DrawerTitle className='text-white'>Contatos</DrawerTitle>
@@ -104,7 +104,7 @@ export function Container() {
 </DrawerContent>
 </Drawer>
     </div>
-      <div className="bg-cyan-300  rounded-md">
+      <div className="bg-cyan-300  rounded-md max-xl:hidden">
       <motion.img   src="/almirdesenho.jpeg" className='w-64 rounded-md transition hover:rotate-0 rotate-12 ' alt="" />
 </div>
   </motion.div >
