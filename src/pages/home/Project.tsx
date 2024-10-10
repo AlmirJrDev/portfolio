@@ -76,7 +76,7 @@ useEffect(() => {
           transition={{ duration: 1.0, ease: 'easeInOut' }} 
 
         className='pt-40 max-lg:p-0 max-lg:flex max-lg:justify-center max-lg:items-center max-lg:flex-col'>
-              <div className='flex justify-between max-lg:w-auto'>
+              <div className='flex justify-between max-lg:gap-4'>
               <h2 className='text-cyan-700'>// Projects</h2><Link className='text-white' to="/project">{'->'} ver tudo</Link>
               </div>
 

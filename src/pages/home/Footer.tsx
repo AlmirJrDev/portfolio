@@ -7,7 +7,7 @@ export function Footer() {
         
       
       className='border-t-2 border-white'>
-        <div className='pl-60 pr-60 mt-20 mb-20'>
+        <div className='pl-60 pr-60 mt-20 mb-20 max-lg:p-5'>
           <div className='flex justify-between items-center'>
             <div>
             <div className='flex gap-8'>   

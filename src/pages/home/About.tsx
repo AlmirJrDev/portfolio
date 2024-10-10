@@ -36,14 +36,14 @@ useEffect(() => {
       animate={scrollY > 1500 ? 'visible' : 'hidden'} 
       variants={variants}
       transition={{ duration: 1.0, ease: 'easeInOut' }} 
-    className='flex flex-col pt-40'>
+    className='flex flex-col pt-40 max-lg:flex max-lg:justify-center max-lg:items-center'>
     <div className='flex justify-between mb-4 mt-4'>
     <h2 className='text-cyan-700'>// About-me</h2> 
     </div>
       <motion.div 
      
-      className='flex gap-4'>
-    <p className='w-10/12 h-64 overflow-y-scroll text-justify text-white bg-zinc-900 pl-4 pr-4 pt-4 rounded-md'>
+      className='flex gap-4 max-lg:flex-col max-lg:justify-center max-lg:items-center'>
+    <p className='w-10/12 h-64 overflow-y-scroll text-justify text-white bg-zinc-900 pl-4 pr-4 pt-4 rounded-md max-lg:w-full max-lg:h-96'>
 Olá! Eu sou o Almir Júnior, <br /> <br/> um apaixonado por tecnologia desde os meus 5 anos de idade. Minha jornada no desenvolvimento começou oficialmente em 2021, e desde então, tenho me dedicado a me especializar na área de front-end, onde encontrei minha verdadeira paixão. Utilizo principalmente TypeScript e React no meu dia a dia, tecnologias que me permitem criar aplicações web robustas e modernas <br /> Além disso, tenho um bom conhecimento em Next.js e React Native, o que amplia minha capacidade de trabalhar em diferentes projetos, tanto para web quanto para mobile.
 <br /><br />
 Atualmente, tenho 20 anos e moro em Hortolândia-SP. Trabalho como desenvolvedor front-end na Grancoffe, uma empresa localizada em Campinas-SP, onde aplico minhas habilidades para criar interfaces de usuário funcionais e esteticamente agradáveis. Ao longo da minha carreira, busco constantemente aprimorar minhas habilidades, mantendo-me atualizado com as últimas tendências do desenvolvimento web e sempre focando em entregar soluções inovadoras.
@@ -55,9 +55,9 @@ Se você está procurando alguém com paixão, dedicação e sede de aprendizado
 
 
 
-    <img className='size-64 rounded-md' src="https:github.com/almirjrdev.png" alt="" />
-    </motion.div>
-    <Link to="/about" className='bg-black h-10 rounded-md text-center flex justify-center items-center text-white w-40 mt-4'>Ler mais {'->'}</Link>
+    <img className='size-64 rounded-md max-lg:w-full max-lg:h-full' src="https:github.com/almirjrdev.png" alt="" />
+    </motion.div >
+    <Link to="/about" className='bg-black h-10 rounded-md text-center flex justify-center items-center text-white w-40 mt-4 max-lg:w-full'>Ler mais {'->'}</Link>
     </motion.section>
 
   )

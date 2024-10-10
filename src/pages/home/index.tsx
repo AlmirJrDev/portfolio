@@ -30,7 +30,7 @@ export function Home() {
     <>
 
        <Container />
-       <main className='p-60 pt-0'>
+       <main className='p-60 pt-0 max-lg:p-10'>
        <Project />
        <Skills />
        <AboutHome />
