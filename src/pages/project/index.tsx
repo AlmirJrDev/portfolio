@@ -76,7 +76,7 @@ export function ProjectPage() {
                   className="mb-4 w-full h-full object-contain"
                   src={`https://raw.githubusercontent.com/${repo.owner.login}/${repo.name}/master/public/thumbnail.png`}
                   alt={repo.name}
-                  onError={(e) => (e.currentTarget.src = repo.owner.avatar_url)}
+                  onError={(e) => (e.currentTarget.src = "default.svg")}
                 />
                 <CardTitle className="text-white text-lg">{repo.name}</CardTitle>
                 <CardDescription>{repo.description || "No description"}</CardDescription>
@@ -85,22 +85,22 @@ export function ProjectPage() {
               <CardFooter className="gap-4">
                 {repo.homepage ? (
                   <>
-                    <a
-                      className="flex font-bold justify-center items-center h-10 rounded-md bg-green-500 w-[80%]"
-                      href={repo.homepage}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      Deploy
-                    </a>
-                    <a
-                      className="flex justify-center items-center h-10 w-10 rounded-md bg-blue-600"
-                      href={repo.html_url}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <Github className="transition-transform hover:rotate-12" />
-                    </a>
+                     <a
+        className='flex font-bold justify-center items-center h-10 rounded-md bg-green-500 transition-all w-[80%] hover:bg-green-700'
+        href={repo.homepage}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Deploy
+      </a>
+      <a
+        className='flex justify-center items-center group h-10 w-10 rounded-md bg-blue-600'
+        href={repo.html_url}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <Github className="transition-all group-hover:rotate-12 group-hover:size-7" />
+      </a>
                   </>
                 ) : (
                   <a
