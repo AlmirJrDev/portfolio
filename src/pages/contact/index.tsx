@@ -39,12 +39,12 @@ export function ContactPage() {
     }
   return(
     <>
-      <main className="px-40 pb-40">
-      <h1 className="text-cyan-300">// Contatos disponiveis.</h1>
+      <main className="px-40 pb-40 max-lg:px-4">
+      <h1 className="text-cyan-300 max-lg:text-center">// Contatos disponiveis.</h1>
         <section className="flex justify-center items-center mt-12 flex-col">
        
           
-          <div className='bg-zinc-900 w-7/12 rounded-md p-4'>
+          <div className='bg-zinc-900 w-7/12 rounded-md p-4 max-md:w-full'>
 
         <div className='flex justify-center items-center text-gray-500 w-full'>Algumas opções para meu contato.</div>
 
@@ -85,15 +85,15 @@ export function ContactPage() {
 
 </div>
         
-          <form  onSubmit={sendEmail} className="mt-10 p-4 py-16 text-white bg-zinc-900 w-7/12 flex justify-center items-center flex-col mb-10 rounded-md" action="">
-          <div className="flex justify-center w-9/12 text-left flex-col gap-3"> 
+          <form  onSubmit={sendEmail} className="mt-10 p-4 py-16 text-white bg-zinc-900 w-7/12 flex justify-center items-center flex-col mb-10 rounded-md max-md:w-full" action="">
+          <div className="flex justify-center w-9/12 text-left flex-col gap-3 max-md:w-full"> 
           <h3 className="text-gray-500 text-center">Fique a vontade para mandar um email para mim!</h3>
           <label className="text-white" htmlFor="name">Nome <span>(obrigatório)</span></label>
-              <input placeholder="Nome completo." type="text" id="name" className="bg-transparent border p-2 " name="name" value={name} onChange={(e) => setName(e.target.value)} required/>
+              <input placeholder="Nome completo." type="text" id="name" className="bg-transparent border p-2 max-lg:mb-5" name="name" value={name} onChange={(e) => setName(e.target.value)} required/>
           <label>Email <span>(obrigatório)</span></label>
-          <input className="bg-transparent border p-2 " placeholder="Insira seu melhor email."  type="email" id="email" name="email" value={email} onChange={(e) => setEmail(e.target.value)} required />
+          <input className="bg-transparent border p-2 max-lg:mb-5" placeholder="Insira seu melhor email."  type="email" id="email" name="email" value={email} onChange={(e) => setEmail(e.target.value)} required />
           <label>Mensagem <span>(obrigatório)</span></label>
-          <textarea className="bg-transparent border p-2 " placeholder="Conte para mim sobre o que está precisando." id="message" name="message" value={message} onChange={(e) => setMessage(e.target.value)} required> </textarea>
+          <textarea className="bg-transparent border p-2 max-lg:mb-5" placeholder="Conte para mim sobre o que está precisando." id="message" name="message" value={message} onChange={(e) => setMessage(e.target.value)} required> </textarea>
           <button className="bg-transparent border p-2 " type="submit" value="Enviar">Enviar</button>
           </div>
           </form>

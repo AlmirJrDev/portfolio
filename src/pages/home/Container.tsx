@@ -47,7 +47,7 @@ export function Container() {
     <br />
     &nbsp;&nbsp;"name": <span className='text-white'>"Almir Júnior Araújo Gomes"</span>,
     <br />
-    &nbsp;&nbsp;"age": <span className='text-cyan-300 text-sm'>24</span>,
+    &nbsp;&nbsp;"age": <span className='text-cyan-300 text-exs'>20</span>,
     <br />
     &nbsp;&nbsp;"occupation": <span className='text-white'>"Front-end Developer"</span>,
     <br />
@@ -104,7 +104,7 @@ export function Container() {
 </DrawerContent>
 </Drawer>
     </div>
-      <div className="bg-cyan-300  rounded-md max-xl:hidden">
+      <div className="bg-gradient-to-r from-red-500 to-orange-500  rounded-md max-xl:hidden">
       <motion.img   src="/almirdesenho.jpeg" className='w-64 rounded-md transition hover:rotate-0 rotate-12 ' alt="" />
 </div>
   </motion.div >
