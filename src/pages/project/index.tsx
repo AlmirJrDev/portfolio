@@ -68,9 +68,9 @@ export function ProjectPage() {
           </a>
         </div>
 
-        <div className="grid grid-cols-3 gap-2 mt-4 max-lg:flex max-lg:justify-center max-lg:items-center max-lg:flex-col">
+        <div className="grid grid-cols-3 gap-2 mt-4 max-md:flex max-lg:justify-center max-lg:items-center max-md:flex-col">
           {repos.slice(0, 12).map((repo) => (
-            <Card key={repo.id} className="bg-zinc-900 border-none flex flex-col h-full max-lg:w-[100%]">
+            <Card key={repo.id} className="bg-zinc-900 border-none flex flex-col h-full max-md:w-[80%]">
               <CardHeader className="flex-grow">
                 <img
                   className="mb-4 w-full h-full object-contain"

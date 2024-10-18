@@ -39,15 +39,15 @@ export function Container() {
     animate="visible" 
     variants={variants}
     transition={{ duration: 1.0, ease: 'easeInOut' }} 
-  className='flex justify-around items-center max-xl:flex-col'>
-    <div className="   "><pre className="h-auto w-auto p-4 rounded-md bg-zinc-900 text-lime-500 max-xl:text-exs"> 
+  className='flex justify-around items-center max-xl:flex-col max-md:text-sm max-sm:text-exs'>
+    <div className="   "><pre className="h-auto w-auto p-4 rounded-md bg-zinc-900 text-lime-500 "> 
       <span className='text-cyan-700'>// Hell0 w0rld :D</span>
       <br />
       <span className="text-yellow-400">{"{"}</span>
     <br />
     &nbsp;&nbsp;"name": <span className='text-white'>"Almir Júnior Araújo Gomes"</span>,
     <br />
-    &nbsp;&nbsp;"age": <span className='text-cyan-300 text-exs'>20</span>,
+    &nbsp;&nbsp;"age": <span className='text-cyan-300 max-md:text-exs'>20</span>,
     <br />
     &nbsp;&nbsp;"occupation": <span className='text-white'>"Front-end Developer"</span>,
     <br />

@@ -82,7 +82,7 @@ useEffect(() => {
 
               <div className='grid grid-cols-3 gap-2 mt-4 max-sm:flex max-sm:justify-center max-sm:items-center max-sm:flex-col'> 
           {repos.slice(0, 6).map(repo => ( // Pega os 6 primeiros repositórios
-        <Card key={repo.id} className='bg-zinc-900 border-none flex flex-col h-full max-lg:w-[100%]'>
+        <Card key={repo.id} className='bg-zinc-900 border-none flex flex-col h-full max-lg:w-[80%]'>
         <CardHeader className='flex-grow'>
         <img
   className='mb-4 w-full h-full object-contain'

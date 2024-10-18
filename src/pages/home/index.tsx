@@ -29,8 +29,8 @@ export function Home() {
   return(
     <>
 
-       <Container />
-       <main className='p-60 pt-0 max-lg:p-10'>
+       <Container  />
+       <main className='p-60 pt-0 max-lg:p-10 max-md:text-sm'>
        <Project />
        <Skills />
        <AboutHome />
