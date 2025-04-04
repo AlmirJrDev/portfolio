@@ -46,17 +46,17 @@ useEffect(() => {
         <h2 className='text-cyan-700'>// Skills</h2> 
         </div>
 
-        <Command className="rounded-lg border shadow-md ">
+        <Command className="rounded-lg border text-white bg-zinc-900 shadow-md ">
       <CommandInput placeholder="Search..." />
       <CommandList className='max-h-[100%]'>
         <CommandEmpty>No results found.</CommandEmpty>
         <CommandGroup heading="Languages">
           <CommandItem>
-          <img src="/typescript.svg" alt="TypeScript Logo" className="mr-2 h-4 w-4" />
+          <img src="/typescript.svg" alt="TypeScript Logo" className="mr-2 h-4 w-4 invert" />
             <span>TypeScript</span>
           </CommandItem>
           <CommandItem>
-            <img src="/javascript.svg"  alt="JavaScript Logo"  className="mr-2 h-4 w-4" />
+            <img src="/javascript.svg"  alt="JavaScript Logo"  className="mr-2 h-4 w-4 invert" />
             <span>JavaScript</span>
           </CommandItem>
         
@@ -64,12 +64,12 @@ useEffect(() => {
         <CommandSeparator />
         <CommandGroup heading="Framework">
           <CommandItem>
-          <img src="/reactjs.svg" alt="React Logo" className="mr-2 h-4 w-4" />
+          <img src="/reactjs.svg" alt="React Logo" className="mr-2 h-4 w-4 invert" />
             <span>React.js</span>
           
           </CommandItem>
           <CommandItem>
-          <img src="/next.svg" alt="Next.js Logo" className="mr-2 h-4 w-4" />
+          <img src="/next.svg" alt="Next.js Logo" className="mr-2 h-4 invert w-4" />
             <span>Next.js</span>
           
           </CommandItem>
@@ -78,12 +78,12 @@ useEffect(() => {
         <CommandSeparator />
         <CommandGroup heading="Tools">
           <CommandItem>
-            <Figma className="mr-2 h-4 w-4" />
+            <Figma className="mr-2 text-white h-4 w-4" />
             <span>Figma</span>
           
           </CommandItem>
           <CommandItem>
-          <img src="/vsc.svg" alt="VS Code Logo" className="mr-2 h-4 w-4" />
+          <img src="/vsc.svg" alt="VS Code Logo" className="mr-2 h-4 w-4 invert" />
             <span>Visual Studio Code</span>
           
           </CommandItem>
